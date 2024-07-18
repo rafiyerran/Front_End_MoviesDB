@@ -1,0 +1,20 @@
+.my-favorite-tv-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.my-favorite-tv-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.my-favorite-tv-card button {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.selected {
+    color: red;
+}

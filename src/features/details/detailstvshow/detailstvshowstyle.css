@@ -1,0 +1,157 @@
+/* Background overlay */
+.behind-background-tvshows {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+/* Invisible button to close the details view */
+.details-background-tvshows {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(19, 17, 17, 0.623);
+    opacity: 0.4;
+}
+
+/* Backdrop image */
+.image-background-tvshows {
+    position: relative;
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    z-index: 50;
+    background-size: cover;
+    background-position: center;
+    width: 80vw;
+    max-width: 1200px;
+    height: 80vh;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Details information section */
+.details-info-tvshows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.795);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Title of the TV show */
+.title-movie-tvshows {
+    font-size: 2rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Overview text */
+.overview-tvshows {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Popularity text */
+.popularity-tvshows {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Close button */
+.close-button-tvshows {
+    background-color: red;
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.close-button-tvshows:hover {
+    background-color: darkred;
+}
+
+/* Poster image */
+.poster {
+    max-width: 220px;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .image-background-tvshows {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .details-info-tvshows {
+        padding: 1.5rem;
+    }
+
+    .title-movie-tvshows {
+        font-size: 1.5rem;
+    }
+
+    .overview-tvshows,
+    .popularity-tvshows {
+        font-size: 1rem;
+    }
+
+    .close-button-tvshows {
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+    }
+
+    .poster {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-background-tvshows {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .details-info-tvshows {
+        padding: 1rem;
+    }
+
+    .title-movie-tvshows {
+        font-size: 1.2rem;
+    }
+
+    .overview-tvshows,
+    .popularity-tvshows {
+        font-size: 0.8rem;
+    }
+
+    .close-button-tvshows {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .poster {
+        max-width: 150px;
+    }
+}

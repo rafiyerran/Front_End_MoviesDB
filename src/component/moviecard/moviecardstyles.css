@@ -1,0 +1,20 @@
+.movie-card {
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-card img {
+    max-width: 100%;
+    height: default;
+    border-radius: 15px;
+}
+
+.movie-card button {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.selected {
+    color: red;
+}
