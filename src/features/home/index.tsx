@@ -70,7 +70,7 @@ const Home = () => {
                 </>
             ) : (
                 <div>Loading...</div>
-            )}
+            )}  
             <div className='flex flex-row justify-between mt-5'>
                 <button
                     onClick={() => handlePage(-1)}
